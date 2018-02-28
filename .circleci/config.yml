@@ -40,7 +40,7 @@ jobs:
           command: dockerize -wait tcp://localhost:3306 -timeout 2m
       - run:
           name: Database setup
-          command: bin/rails db:schema:load --trace
+          command: rake db:schema:load --trace
       - run:
           name: Run Rspec
           command: |
