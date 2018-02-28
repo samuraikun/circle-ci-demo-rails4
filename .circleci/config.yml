@@ -37,7 +37,7 @@ jobs:
       # Database setup
       - run:
           name: Wait for DB
-          command: dockerize -wait tcp://localhost:5432 -timeout 2m
+          command: dockerize -wait tcp://localhost:3306 -timeout 2m
       - run:
           name: Database setup
           command: bin/rails db:schema:load --trace
