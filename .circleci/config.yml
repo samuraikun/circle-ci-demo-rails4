@@ -43,10 +43,8 @@ jobs:
           name: Database setup
           command: rake db:schema:load --trace
       - run:
-        name: Setting secrets.yml
-        command: |
-          mv -f config/secrets.ci.yml config/secrets.yml
-          export SECRET_KEY_BASE=xxxxxxxxxxxxxxxx
+          name: Setting secrets.yml
+          command: mv -f config/secrets.ci.yml config/secrets.yml
       - run:
           name: Run Rspec
           command: |
