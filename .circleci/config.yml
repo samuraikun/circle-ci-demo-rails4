@@ -42,7 +42,7 @@ jobs:
       - run:
           name: Database setup
           command: rake db:schema:load --trace
-      -run:
+      - run:
         name: Setting secrets.yml
         command: |
           mv -f config/secrets.ci.yml config/secrets.yml
