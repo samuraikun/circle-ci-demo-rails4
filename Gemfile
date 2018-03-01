@@ -44,6 +44,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'rspec-collection_matchers'
   gem 'rspec-rails'
+  gem 'rspec_junit_formatter'
   gem 'simplecov', require: false
   gem 'simplecov-rcov', require: false
   gem 'timecop'
