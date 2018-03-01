@@ -46,7 +46,7 @@ jobs:
         name: Setting secrets.yml
         command: |
           mv -f config/secrets.ci.yml config/secrets.yml
-          export SECRET_KEY_BASE=`bundle exec rake secret`
+          export SECRET_KEY_BASE=xxxxxxxxxxxxxxxx
       - run:
           name: Run Rspec
           command: |
